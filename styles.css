@@ -71,6 +71,7 @@ h3 {
     color: #3d3d53;
     font-weight: bold;
     white-space: nowrap;
+    max-width: 12em;
 }
 
 .experience-details li {
