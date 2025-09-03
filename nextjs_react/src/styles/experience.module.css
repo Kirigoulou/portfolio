@@ -1,0 +1,7 @@
+.experienceContainer {
+    display: flex;
+    font-size: 0.85em;
+    gap: 1.25rem;
+    margin-bottom: 4rem;
+    justify-content: start;
+}

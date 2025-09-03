@@ -1,3 +1,5 @@
+import styles from "@/styles/header.module.css"
+
 type headerProps = {
     name: string;
     title: string;
@@ -6,10 +8,10 @@ type headerProps = {
 
 export default function Header(props: headerProps) {
     return (
-        <header className="pres-header">
-            <h1>{props.name}</h1>
-            <h2>{props.title}</h2>
-            <p className={"catchphrase"}>{props.catchphrase}</p>
+        <header className={styles.headerContainer}>
+            <h1 className={styles.userName}>{props.name}</h1>
+            <h2 className={styles.titleName}>{props.title}</h2>
+            <p className={styles.catchphrase}>{props.catchphrase}</p>
         </header>
     );
 }

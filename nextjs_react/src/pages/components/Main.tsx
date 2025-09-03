@@ -1,4 +1,7 @@
 import { About, aboutProps } from "./About";
+import Experience from "./Experience";
+
+import styles from "@/styles/main.module.css";
 
 const par: aboutProps = [
     {
@@ -34,8 +37,9 @@ const par: aboutProps = [
 
 export default function Main() {
     return (
-        <main>
+        <main className={styles.mainContainer}>
             <About paragraphs={par}/>
+            <Experience />
         </main>
     );
 }
