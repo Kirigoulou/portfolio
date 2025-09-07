@@ -1,13 +1,17 @@
-import Job, { jobProps} from "./Job";
+import Job, {jobProps} from "./Job";
 
 import styles from "@/styles/experience.module.css";
+import {useState} from "react";
+import {isNull} from "node:util";
 
 type jobsType = jobProps[];
+
 
 const jobs: jobsType = [
     {
         title: "Web Application Developer • Institut Curie",
         date: "Sept. 2024 - Jan. 2025",
+        link: "https://curie.fr/",
         descriptions: [
             `Led the complete redesign of a statistical analysis web application for quality monitoring of
             radiotherapy machines.`,
@@ -20,24 +24,44 @@ const jobs: jobsType = [
             `Integrated MySQL database for enriched dosimetric tracking with dynamic filtering and
             visualization tools.`,
         ],
+        tools: ["Python", "Streamlit", "MySQL", "SQL Server"],
     },
     {
         title: "Teaching Assistant • EPITA",
         date: "Sept. 2023 - Jun. 2024",
+        link: "https://www.epita.fr/",
         descriptions: [
             `Supervised programming lab sessions in C and Rust for undergraduate students.`,
             `Authored programming exercises and provided grading and feedback on assignments and exams.`,
         ],
+        tools: ["C", "Rust"],
     },
 ];
 
 export default function Experience() {
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+    console.log(hoveredIndex);
+
     return (
         <section>
             <ul>
                 {jobs.map((job: jobProps, i) =>
-                    <li className={styles.experienceContainer} key={`job-${i}`}>
-                        <Job title={job.title} date={job.date} descriptions={job.descriptions}/>
+                    <li
+                        className={`${styles.experienceContainer} ${hoveredIndex !== null && hoveredIndex !== i ? styles.nonSelectedContainer : {}}`}
+                        key={`job-${i}`}
+                        onMouseEnter={() => setHoveredIndex(i)}
+                        onMouseLeave={() => setHoveredIndex(null)}
+                    >
+                        <a href={job.link} target={"_blank"} className={styles.experienceLink}></a>
+                        <Job
+                            title={job.title}
+                            date={job.date}
+                            link={job.link}
+                            descriptions={job.descriptions}
+                            tools={job.tools}
+                            isHovered={hoveredIndex === i}
+                        />
                     </li>)}
             </ul>
         </section>

@@ -1,7 +1,35 @@
 .experienceContainer {
+    position: relative;
     display: flex;
     font-size: 0.85em;
     gap: 1.25rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     justify-content: start;
+    padding: 1em;
+    transition: background 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+
+.experienceContainer:hover {
+    background: rgb(255, 255, 255, 0.0125);
+    border-radius: 0.75rem;
+    border-top: 1px solid rgb(255, 255, 255, 0.048);
+    /*border-left: 1px solid rgb(255, 255, 255, 0.048);*/
+    /*box-shadow: rgba(0, 0, 0, 0.35) 0.25rem 0.5rem 1rem;*/
+}
+
+.nonSelectedContainer {
+    opacity: 30%;
+    transition: opacity 0.1s ease-out;
+}
+
+.experienceContainer:hover .experienceDescriptionContainer .experienceTitle {
+    color: #000000;
+}
+
+.experienceLink {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }

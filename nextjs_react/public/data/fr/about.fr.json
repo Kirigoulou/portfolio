@@ -1,0 +1,16 @@
+{
+  "about": [
+    {
+      "id": "about-me",
+      "content": "Je suis un **étudiant en ingénierie** passionné par les **systèmes embarqués**, la **programmation bas niveau** et le développement de logiciels fiables faisant le lien entre le **hardware et le software**. J’apprécie particulièrement de travailler au plus près de la machine, où la précision et l’efficacité sont essentielles, que ce soit pour du **firmware**, des **drivers** ou des **concepts de systèmes d’exploitation**."
+    },
+    {
+      "id": "schooling",
+      "content": "Actuellement, je suis en dernière année à l’**EPITA (Paris, France)**, avec une spécialisation en **ingénierie informatique**. J’ai renforcé mon expertise en **développement embarqué** à travers des projets impliquant des **microcontrôleurs**, des **protocoles de communication** et des **systèmes temps réel**. J’ai également eu l’opportunité d’étudier à la **California State University, Los Angeles**, où j’ai approfondi mes connaissances en **informatique** dans un contexte international."
+    },
+    {
+      "id": "experiences",
+      "content": "Par le passé, j’ai effectué un stage à l’**Institut Curie**, où j’ai développé une **application web** pour le suivi de **machines de radiothérapie**, acquérant ainsi une expérience précieuse dans la conception de solutions techniques à fort impact. J’ai également travaillé sur plusieurs projets techniques, comme l’écriture d’un **driver pour le MPU6050 sur STM32**, la conception d’un **parseur de système de fichiers ISO9660 en C**, et des expérimentations en **développement noyau**, ce qui a renforcé ma compréhension des logiciels **embarqués** et **système**."
+    }
+  ]
+}

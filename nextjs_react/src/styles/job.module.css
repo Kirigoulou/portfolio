@@ -10,8 +10,30 @@
     color: var(--title-foreground);
 }
 
+.hoveredTitle {
+    color: var(--pill-background);
+}
+
 .experienceDetails {
     list-style-type: disc;
+}
+
+.toolsContainer {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.toolName {
+    background: var(--pill-background);
+    color: var(--pill-foreground);
+    text-align: center;
+    vertical-align: middle;
+    padding-inline: 1em;
+    padding-block: 0.4em;
+    line-height: 1.25;
+    border-radius: 999em;
+    font-size: 0.875em;
 }
 
 .experienceDescriptionContainer {}
