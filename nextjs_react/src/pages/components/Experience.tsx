@@ -2,7 +2,6 @@ import Job, {jobProps} from "./Job";
 
 import styles from "@/styles/experience.module.css";
 import {useState} from "react";
-import {isNull} from "node:util";
 
 type jobsType = jobProps[];
 
@@ -44,11 +43,11 @@ export default function Experience() {
     console.log(hoveredIndex);
 
     return (
-        <section>
+        <section className={styles.experienceContainer}>
             <ul>
                 {jobs.map((job: jobProps, i) =>
                     <li
-                        className={`${styles.experienceContainer} ${hoveredIndex !== null && hoveredIndex !== i ? styles.nonSelectedContainer : {}}`}
+                        className={`${styles.jobContainer} ${hoveredIndex !== null && hoveredIndex !== i ? styles.nonSelectedContainer : {}}`}
                         key={`job-${i}`}
                         onMouseEnter={() => setHoveredIndex(i)}
                         onMouseLeave={() => setHoveredIndex(null)}

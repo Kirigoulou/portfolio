@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "name": "Autonomous Robot Localization with LiDAR – ROS2 ",
+      "group": "5 students",
+      "duration": "2 semesters",
+      "description": [
+        "Enhanced indoor/outdoor localization for a mobile robot in a nuclear inspection context by integrating LiDAR with GPS and odometry.",
+        "Developed mapping and sensor fusion modules in ROS2; validated algorithms in simulation and field tests."
+      ]
+    },
+    {
+      "name": "STM32 Gyroscope Driver Development – MPU6050",
+      "group": "2 students",
+      "duration": "4 weeks",
+      "description": [
+        "Designed and implemented a low-level driver enabling PC communication with an MPU6050 gyroscope module over I²C.",
+        "Achieved reliable data acquisition for real-time motion analysis."
+      ]
+    },
+    {
+      "name": "Single-Cycle Processor Design – VHDL",
+      "group": "individual",
+      "duration": "4 weeks",
+      "description": [
+        "Designed and simulated a monolithic single-cycle CPU in VHDL.",
+        "Created comprehensive test benches to validate instruction set execution on FPGA."
+      ]
+    },
+    {
+      "name": "K Project – x86 Kernel Development (C, x86 Assembly)",
+      "group": "2 students",
+      "duration": "4 weeks",
+      "description": [
+        "Designed and implemented a custom x86 operating system kernel.",
+        "Set up GDT/IDT, implemented low-level drivers for serial, timer, keyboard, and ATAPI for CD-ROM support.",
+        "Added ISO 9660 filesystem parsing for file handling."
+      ]
+    },
+    {
+      "name": "TinyX Social Network Search Service – Quarkus, Redis, Elasticsearch (Java)",
+      "group": "10 students",
+      "duration": "4 weeks",
+      "description": [
+        "Developed search endpoints for a social network platform using Quarkus and Elasticsearch.",
+        "Implemented efficient indexing and query optimization for real-time post/user retrieval."
+      ]
+    }
+  ]
+}

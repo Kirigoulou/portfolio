@@ -1,4 +1,8 @@
 .experienceContainer {
+    margin-bottom: 8rem;
+}
+
+.jobContainer {
     position: relative;
     display: flex;
     font-size: 0.85em;
@@ -9,7 +13,7 @@
     transition: background 0.1s ease-out, box-shadow 0.1s ease-out;
 }
 
-.experienceContainer:hover {
+.jobContainer:hover {
     background: rgb(255, 255, 255, 0.0125);
     border-radius: 0.75rem;
     border-top: 1px solid rgb(255, 255, 255, 0.048);
@@ -22,7 +26,7 @@
     transition: opacity 0.1s ease-out;
 }
 
-.experienceContainer:hover .experienceDescriptionContainer .experienceTitle {
+.jobContainer:hover .experienceDescriptionContainer .experienceTitle {
     color: #000000;
 }
 

@@ -38,6 +38,7 @@ export default function Main() {
         <main className={styles.mainContainer}>
             <About />
             <Experience />
+
         </main>
     );
 }
