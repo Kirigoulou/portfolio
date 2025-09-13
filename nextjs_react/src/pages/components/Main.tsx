@@ -3,6 +3,7 @@ import Experience from "./Experience";
 
 import styles from "@/styles/main.module.css";
 import {useEffect, useState} from "react";
+import Project from "@/pages/components/Project";
 
 // const par: aboutProps = [
 //     {
@@ -38,7 +39,7 @@ export default function Main() {
         <main className={styles.mainContainer}>
             <About />
             <Experience />
-
+            <Project />
         </main>
     );
 }

@@ -19,7 +19,7 @@ export function About() {
     }, []);
 
     return (
-        <section className={styles.aboutContainer}>
+        <section>
             {aboutData?.map((par) => (
                 <Markdown key={par.id}>{par.content}</Markdown>
             ))}

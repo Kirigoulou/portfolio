@@ -43,7 +43,7 @@ export default function Experience() {
     console.log(hoveredIndex);
 
     return (
-        <section className={styles.experienceContainer}>
+        <section>
             <ul>
                 {jobs.map((job: jobProps, i) =>
                     <li
