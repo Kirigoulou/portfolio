@@ -24,7 +24,7 @@ export default function Project() {
         <section>
             <ul>
                 {projectsData?.map((project: projectProps, i) =>
-                    <li key={`project-${i}`}>
+                    <li className={styles.jobContainer} key={`project-${i}`}>
                         {/*<a href={job.link} target={"_blank"} className={styles.experienceLink}></a>*/}
                         <ProjectItem
                             name={project.name}

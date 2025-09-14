@@ -9,7 +9,7 @@ type jobsType = jobProps[];
 const jobs: jobsType = [
     {
         title: "Web Application Developer • Institut Curie",
-        date: "Sept. 2024 - Jan. 2025",
+        date: "SEPT. 2024 - JAN. 2025",
         link: "https://curie.fr/",
         descriptions: [
             `Led the complete redesign of a statistical analysis web application for quality monitoring of
@@ -27,7 +27,7 @@ const jobs: jobsType = [
     },
     {
         title: "Teaching Assistant • EPITA",
-        date: "Sept. 2023 - Jun. 2024",
+        date: "SEPT. 2023 - JUN. 2024",
         link: "https://www.epita.fr/",
         descriptions: [
             `Supervised programming lab sessions in C and Rust for undergraduate students.`,

@@ -12,9 +12,13 @@ export type projectProps = {
 export default function Job(props: projectProps) {
     return (
         <>
-            <div className="{}">
-                <h3 className={`{} ${props.isHovered ? {} : {}}`}>{props.name}</h3>
-                <ul className="{}">
+            <header className={styles.experienceDateContainer}>
+                <h4 className={styles.projectHeaderContent}>👥 {props.groupSize}</h4>
+                <h4 className={styles.projectHeaderContent}>⏳ {props.duration}</h4>
+            </header>
+            <div className={styles.experienceDescriptionContainer}>
+                <h3 className={`${styles.experienceTitle} ${props.isHovered ? {} : {}}`}>{props.name}</h3>
+                <ul className={styles.experienceDetails}>
                     {props.descriptions.map((desc, i) => <li key={`desc-${i}`}>{desc}</li>)}
                 </ul>
                 {/*<div className={styles.toolsContainer}>*/}
