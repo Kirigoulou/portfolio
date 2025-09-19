@@ -7,6 +7,7 @@ type projectPropsList = Array<projectProps>;
 
 export default function Project() {
     const [projectsData, setProjectsData] = useState<projectPropsList | null>(null);
+    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
     useEffect(() => {
         fetch("data/en/projects.json", { mode: "no-cors" })
@@ -24,14 +25,21 @@ export default function Project() {
         <section>
             <ul>
                 {projectsData?.map((project: projectProps, i) =>
-                    <li className={styles.jobContainer} key={`project-${i}`}>
-                        {/*<a href={job.link} target={"_blank"} className={styles.experienceLink}></a>*/}
+                    <li
+                        // className={styles.jobContainer}
+                        className={`${styles.jobContainer} ${hoveredIndex !== null && hoveredIndex !== i ? styles.nonSelectedContainer : {}}`}
+                        key={`project-${i}`}
+                        onMouseEnter={() => setHoveredIndex(i)}
+                        onMouseLeave={() => setHoveredIndex(null)}
+                    >
+                        <a href="" target={"_blank"} className={styles.experienceLink}></a>
                         <ProjectItem
                             name={project.name}
                             groupSize={project.groupSize}
                             duration={project.duration}
                             descriptions={project.descriptions}
                             paragraphs={project.paragraphs}
+                            isHovered={hoveredIndex === i}
                         />
                     </li>)
                 }

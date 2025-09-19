@@ -1,8 +1,9 @@
 .headerContainer {
-    top: 0;
+    top: 6rem;
     position: sticky;
     align-self: flex-start;
     width: 50%;
+    /*padding: 6rem 0;*/
 }
 
 .userName {

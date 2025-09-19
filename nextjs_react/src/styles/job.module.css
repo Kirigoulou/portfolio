@@ -42,3 +42,40 @@
 .projectHeaderContent {
     margin: 0;
 }
+
+@keyframes halfSpinIn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes halfSpinOut {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.groupEmoji {
+    color: var(--title-foreground);
+    /*animation: halfSpinOut 1s ease-in;*/
+    /*transform: rotate(0deg);*/
+    /*transition: transform 1s ease;*/
+}
+
+.hourglassEmoji {
+    color: var(--title-foreground);
+    animation: halfSpinOut 1s ease-in;
+    /*transform: rotate(0deg);*/
+    /*transition: transform 1s ease;*/
+}
+
+.hourglassEmojiHovered {
+    color: var(--title-foreground);
+    animation: halfSpinIn 1s ease-out;
+    /*transform: rotate(180deg);*/
+}

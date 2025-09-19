@@ -40,7 +40,6 @@ const jobs: jobsType = [
 export default function Experience() {
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
-    console.log(hoveredIndex);
 
     return (
         <section>
