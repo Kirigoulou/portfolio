@@ -1,0 +1,25 @@
+.headerContainer {
+    top: 6rem;
+    position: sticky;
+    align-self: flex-start;
+    width: 50%;
+    /*padding: 6rem 0;*/
+}
+
+.userName {
+    font-weight: bolder;
+    font-size: calc(2vw + 0.5em);
+    margin: 0;
+    color: var(--title-foreground);
+}
+
+.titleName {
+    font-weight: normal;
+    margin: 0.5rem 0 0 0;
+    color: var(--title-foreground);
+}
+
+.catchphrase {
+    max-width: 20rem;
+    margin: 1.5em 0 0 0;
+}

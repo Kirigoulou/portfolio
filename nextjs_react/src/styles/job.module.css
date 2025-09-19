@@ -1,0 +1,81 @@
+.experienceDateContainer {
+    color: #3d3d53;
+    font-weight: bold;
+    white-space: nowrap;
+    min-width: 12em;
+    display: block;
+}
+
+.experienceTitle {
+    margin: 0 0 1em 0;
+    color: var(--title-foreground);
+}
+
+.hoveredTitle {
+    color: var(--pill-background);
+}
+
+.experienceDetails {
+    list-style-type: disc;
+}
+
+.toolsContainer {
+    display: flex;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.toolName {
+    background: var(--pill-background);
+    color: var(--pill-foreground);
+    text-align: center;
+    vertical-align: middle;
+    padding-inline: 1em;
+    padding-block: 0.4em;
+    line-height: 1.25;
+    border-radius: 999em;
+    font-size: 0.875em;
+}
+
+.experienceDescriptionContainer {}
+
+.projectHeaderContent {
+    margin: 0;
+}
+
+@keyframes halfSpinIn {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes halfSpinOut {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.groupEmoji {
+    color: var(--title-foreground);
+    /*animation: halfSpinOut 1s ease-in;*/
+    /*transform: rotate(0deg);*/
+    /*transition: transform 1s ease;*/
+}
+
+.hourglassEmoji {
+    color: var(--title-foreground);
+    animation: halfSpinOut 1s ease-in;
+    /*transform: rotate(0deg);*/
+    /*transition: transform 1s ease;*/
+}
+
+.hourglassEmojiHovered {
+    color: var(--title-foreground);
+    animation: halfSpinIn 1s ease-out;
+    /*transform: rotate(180deg);*/
+}

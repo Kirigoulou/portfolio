@@ -1,0 +1,75 @@
+{
+  "projects": [
+    {
+      "name": "Autonomous Robot Localization with LiDAR – ROS2 ",
+      "groupSize": "5 STUDENTS",
+      "duration": "2 SEMESTERS",
+      "descriptions": [
+        "Enhanced indoor/outdoor localization for a mobile robot in a nuclear inspection context by integrating LiDAR with GPS and odometry.",
+        "Developed mapping and sensor fusion modules in ROS2; validated algorithms in simulation and field tests."
+      ],
+      "paragraphs": [
+        "This project focused on developing an advanced localization system for a mobile robot operating in challenging nuclear inspection environments. As part of a multidisciplinary team, I contributed to improving the robot’s positioning capabilities by implementing a robust sensor fusion approach that combined LiDAR, GPS, and odometry data. The goal was to achieve reliable localization both indoors, where GPS is unavailable, and outdoors, where environmental conditions could affect sensor accuracy.",
+        "The technical implementation was built around the ROS2 framework, where I played a key role in designing and developing mapping and sensor fusion modules. These modules processed and combined data from multiple sensors to produce accurate position estimates even in GPS-denied environments. Extensive simulation in Gazebo allowed us to validate our algorithms before moving on to real-world experiments, where we fine-tuned the system for field conditions.",
+        "This project provided valuable experience in robotics system integration, advanced sensor fusion, and simulation-to-deployment workflows. It also highlighted the practical challenges of building autonomous systems for critical infrastructure environments, where safety and reliability are paramount."
+      ]
+    },
+    {
+      "name": "STM32 Gyroscope Driver Development – MPU6050",
+      "groupSize": "2 STUDENTS",
+      "duration": "4 WEEKS",
+      "descriptions": [
+        "Designed and implemented a low-level driver enabling PC communication with an MPU6050 gyroscope module over I²C.",
+        "Achieved reliable data acquisition for real-time motion analysis."
+      ],
+      "paragraphs": [
+        "This embedded systems project involved the development of a low-level driver for the MPU6050 gyroscope sensor using STM32 microcontrollers. In collaboration with a teammate, I was responsible for enabling I²C communication between the STM32 and the gyroscope, and creating an interface for transferring motion data to a PC for analysis. The objective was to provide stable and accurate sensor readings suitable for real-time applications.",
+        "The implementation included initialization routines, configuration management, and robust data acquisition algorithms. Particular attention was given to handling timing constraints, ensuring error detection, and maintaining consistent performance under different operating conditions. By the end of the project, the system was capable of providing reliable motion tracking data that could be leveraged for analysis, visualization, or further embedded applications.",
+        "This experience strengthened my skills in embedded C programming, hardware-software integration, and low-level communication protocols. It also emphasized the importance of writing efficient, maintainable code for resource-constrained environments."
+      ]
+    },
+    {
+      "name": "Single-Cycle Processor Design – VHDL",
+      "groupSize": "INDIVIDUAL",
+      "duration": "4 WEEKS",
+      "descriptions": [
+        "Designed and simulated a monolithic single-cycle CPU in VHDL.",
+        "Created comprehensive test benches to validate instruction set execution on FPGA."
+      ],
+      "paragraphs": [
+        "As a solo project, I designed and implemented a single-cycle CPU architecture using VHDL. The design included all major components of a basic processor: arithmetic logic unit (ALU), register file, instruction memory, data memory, and control unit. These elements were integrated into a monolithic architecture capable of executing a simplified instruction set.",
+        "The project began with architectural specifications, followed by hardware description coding in VHDL. I developed detailed test benches to rigorously validate the execution of arithmetic, logical, memory, and control instructions. Once validated in simulation, the processor design was synthesized and deployed on FPGA hardware, showcasing the complete hardware development lifecycle from concept to physical implementation.",
+        "This project highlighted my ability to design digital systems, work with hardware description languages, and apply systematic verification techniques—skills essential in both FPGA development and computer architecture research."
+      ]
+    },
+    {
+      "name": "K Project – x86 Kernel Development (C, x86 Assembly)",
+      "groupSize": "2 STUDENTS",
+      "duration": "4 WEEKS",
+      "descriptions": [
+        "Designed and implemented a custom x86 operating system kernel.",
+        "Set up GDT/IDT, implemented low-level drivers for serial, timer, keyboard, and ATAPI for CD-ROM support.",
+        "Added ISO 9660 filesystem parsing for file handling."
+      ],
+      "paragraphs": [
+        "This systems programming project involved building a custom operating system kernel for the x86 architecture. Partnering with another student, I contributed to designing and implementing the fundamental components required for a functioning kernel, including system initialization, interrupt handling, and low-level device management.",
+        "I implemented key data structures such as the Global Descriptor Table (GDT) and Interrupt Descriptor Table (IDT) to manage CPU operation and interrupts. Additionally, I wrote low-level drivers for serial communication, system timer, keyboard input, and ATAPI CD-ROM support. To handle file operations, the kernel featured a custom ISO 9660 filesystem parser, allowing the system to read and navigate CD-ROM contents.",
+        "Through this project, I gained deep insights into the inner workings of operating systems, low-level hardware interactions, and the intricacies of x86 architecture. It also strengthened my debugging skills, as developing at the bare-metal level required careful testing and a methodical approach to troubleshooting."
+      ]
+    },
+    {
+      "name": "TinyX Social Network Search Service – Quarkus, Redis, Elasticsearch (Java)",
+      "groupSize": "10 STUDENTS",
+      "duration": "4 WEEKS",
+      "descriptions": [
+        "Developed search endpoints for a social network platform using Quarkus and Elasticsearch.",
+        "Implemented efficient indexing and query optimization for real-time post/user retrieval."
+      ],
+      "paragraphs": [
+        "This software engineering project was part of a large team effort to design a scalable social network platform. My contributions centered on building a high-performance search service using Quarkus, Elasticsearch, and Redis. The system was designed to support real-time retrieval of posts and user profiles while maintaining low response times under high loads.",
+        "I developed RESTful APIs in Quarkus to expose search functionality and integrated them with Elasticsearch for indexing and querying social media content. Special focus was placed on designing efficient indexing strategies and query optimizations to ensure fast and accurate search results. Redis was incorporated for caching frequently requested data, further improving performance and scalability.",
+        "This experience provided practical knowledge of microservices development, distributed systems, and search engine technologies. It also emphasized the importance of team collaboration, as coordinating among ten developers required version control discipline, clear communication, and consistent adherence to design principles."
+      ]
+    }
+  ]
+}
