@@ -1,10 +1,9 @@
 import Markdown from "react-markdown";
-import styles from "@/styles/about.module.css";
 import {useEffect, useState} from "react";
 
 export type aboutProps = Array<{ id: string, content: string }>;
 
-export function About() {
+export default function About() {
     const [aboutData, setAboutData] = useState<aboutProps | null>(null);
 
     useEffect(() => {

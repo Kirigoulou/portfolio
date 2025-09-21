@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
-import ProjectItem, {projectProps} from "@/pages/components/ProjectItem";
-import Job, {jobProps} from "./Job";
+import ProjectItem, {projectProps} from "@/components/ProjectItem";
 import styles from "@/styles/experience.module.css";
 
 type projectPropsList = Array<projectProps>;
